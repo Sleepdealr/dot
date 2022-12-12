@@ -20,6 +20,7 @@ export ZSH_DIR='/Users/sleep/.config/zsh'
 source $ZSH_DIR/aliases.zsh
 source $ZSH_DIR/scripts.zsh
 source $ZSH_DIR/macos.zsh
+source $ZSH_DIR/hidden.zsh
 
 for file in $ZSH_DIR/plugins/*.zsh; do
     source "$file"
