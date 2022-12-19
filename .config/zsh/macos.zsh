@@ -12,8 +12,6 @@ alias   discord="open -a discord"
 alias   youtube-dl="yt-dlp"
 alias   mt="open http://monkeytype.com"
 alias   7z="7zz"
-alias   cnotes="cd /Users/sleep/Documents/HS-2022-2023-Notes"
-alias   enotes="code /Users/sleep/Documents/HS-2022-2023-Notes"
 alias   nt="open -a iterm ."
 alias   nf="neofetch"
 
@@ -25,15 +23,7 @@ alias   ahhh="defaults write -g ApplePressAndHoldEnabled -bool FALSE"
 alias   no-ahhh="defaults write -g ApplePressAndHoldEnabled -bool TRUE"
 alias   power-chime="defaults write com.apple.PowerChime ChimeOnAllHardware -bool true; open /System/Library/CoreServices/PowerChime.app"
 
-# Terminal sizing
-alias   t-s="printf '\e[8;20;70t'"      # small
-alias   t-r="printf '\e[8;40;130t'"     # regular
-alias   t-l="printf '\e[8;60;200t'"     # large
-alias   t-h="printf '\e[6;0;0t'"        # hide
-
-
 # etc 
-
 cdf() {
     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
     if [ "$target" != "" ]; then
